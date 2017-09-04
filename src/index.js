@@ -60,9 +60,9 @@
    *
    * @param {Number} min - lower bound
    * @param {Number} max - upper bound
-   * @param {Number} p - number between 0 and 1
+   * @param {Number} p - number on interval [0, 1)
    *
-   * @return {Number} between to and from
+   * @return {Number} integer on interval [min, max]
    */
   function integer (min, max, p) {
     return Math.floor((max - min + 1) * p + min)
@@ -73,7 +73,7 @@
    * @function module:fun-sample.member
    *
    * @param {Array} set - to pick from
-   * @param {Number} p - number between 0 and 1
+   * @param {Number} p - number on interval [0, 1)
    *
    * @return {*} an element of set
    */
@@ -87,9 +87,9 @@
    *
    * @param {Number} min - lower bound
    * @param {Number} max - upper bound
-   * @param {Number} p - number between 0 and 1
+   * @param {Number} p - number on interval [0, 1)
    *
-   * @return {Number} between to and from
+   * @return {Number} number on interval [min, max)
    */
   function number (min, max, p) {
     return ((max - min) * p) + min
